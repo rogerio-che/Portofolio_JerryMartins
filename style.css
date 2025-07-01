@@ -10,17 +10,17 @@
 }
 
 :root {
-  --bg-color: linear-gradient(45deg, #bdcec7, #2c3e50);
-  --main-color: #f5af19;
-  --2nd-main-color: #ffffffcc;
-  --text-color: #fff;
+  --bg-color: #f8f8f8; /* Warna latar belakang utama yang lebih terang dan modern */
+  --main-color: #4a90e2; /* Biru yang elegan dan memberikan kesan profesional */
+  --2nd-main-color: #6c757d; /* Abu-abu netral untuk teks sekunder */
+  --text-color: #343a40; /* Hitam gelap untuk teks utama agar mudah dibaca */
   --big-font: 5rem;
   --h2-font: 1.9rem;
   --p-font: 1rem;
 }
 
 body {
-  background: linear-gradient(45deg, #bdcec7, #2c3e50);
+  background: var(--bg-color);
   color: var(--text-color);
 }
 
@@ -33,9 +33,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--bg-color);
+  background: #ffffff; /* Header bisa lebih terang untuk kontras */
   padding: 24px 14%;
   transition: 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Tambahkan sedikit bayangan untuk kesan modern */
 }
 
 .logo {
@@ -61,6 +62,7 @@ span {
 
 .navbar a:hover {
   background: var(--main-color);
+  color: #ffffff; /* Ubah warna teks saat hover agar kontras */
   transition: 0.3s;
 }
 
@@ -124,8 +126,8 @@ section {
 
 .btn {
   background: var(--main-color);
-  color: var(--text-color);
-  box-shadow: 4px 4px var(--text-color);
+  color: #ffffff; /* Ubah teks tombol menjadi putih agar kontras */
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih soft */
   padding: 0 25px;
   line-height: 42px;
   display: inline-block;
@@ -137,8 +139,8 @@ section {
 }
 
 .btn:hover {
-  background: var(--text-color);
-  color: var(--main-color);
+  background: var(--text-color); /* Ubah ke warna teks utama saat hover */
+  color: #ffffff; /* Ubah warna teks tombol menjadi putih */
   box-shadow: 4px 4px var(--main-color);
 }
 
@@ -221,11 +223,12 @@ section {
 }
 
 .row {
-  background: #2c3e50;
+  background: #ffffff; /* Latar belakang baris lebih terang */
   padding: 60px 35px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Bayangan yang lebih soft */
 }
 
 .row i {
@@ -249,11 +252,11 @@ section {
 
 .row:hover {
   transform: translateY(-15px);
-  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15); /* Bayangan saat hover lebih jelas */
 }
 
 .cta {
-  background: #2c3e50;
+  background: var(--main-color); /* CTA menggunakan warna aksen utama */
   width: 100%;
   padding: 150px 0;
   text-align: center;
@@ -261,14 +264,14 @@ section {
 }
 
 .cta h4 {
-  color: var(--text-color);
+  color: #ffffff; /* Teks putih untuk CTA */
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
 .cta h2 {
-  color: var(--main-color);
+  color: #ffffff; /* Teks putih untuk CTA */
   font-size: 4rem;
   font-weight: 300;
   margin-bottom: 40px;
@@ -283,15 +286,16 @@ section {
 }
 
 .box {
-  background: #2c3e50;
+  background: #ffffff; /* Latar belakang box lebih terang */
   padding: 40px 30px;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Bayangan yang lebih soft */
 }
 
 .box h6 {
-  color: #7c7d82;
+  color: var(--2nd-main-color); /* Warna abu-abu untuk tanggal/kategori */
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -316,12 +320,12 @@ section {
 .box h5 {
   font-size: 14px;
   font-weight: 500;
-  color: var(--2nd-main-color);
+  color: var(--main-color); /* Warna aksen untuk informasi penting */
 }
 
 .box:hover {
   transform: translateY(-15px);
-  box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15); /* Bayangan saat hover lebih jelas */
 }
 
 .contact-from {
@@ -342,10 +346,11 @@ form textarea {
   padding: 20px;
   border: none;
   outline: none;
-  background: #2c3e50;
+  background: #ffffff; /* Input form juga lebih terang */
   color: var(--text-color);
   margin-bottom: 0.5rem;
   border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Sedikit bayangan pada input */
 }
 
 form input::placeholder,
@@ -360,8 +365,8 @@ textarea {
 
 form .send-btn {
   background: var(--main-color);
-  color: var(--text-color);
-  box-shadow: 4px 4px var(--text-color);
+  color: #ffffff; /* Tombol kirim putih */
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
   padding: 0 25px;
   line-height: 42px;
   display: inline-block;
@@ -375,7 +380,7 @@ form .send-btn {
 
 form .send-btn:hover {
   background: var(--text-color);
-  color: var(--main-color);
+  color: #ffffff;
   box-shadow: 4px 4px var(--main-color);
 }
 
@@ -383,9 +388,10 @@ form .send-btn:hover {
   text-align: center;
   padding: 30px;
   color: var(--2nd-main-color);
-  background: #2c3e50;
+  background: #ffffff; /* Footer juga lebih terang */
   margin-top: 3rem;
   line-height: 1.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05); /* Garis tipis di atas footer */
 }
 
 @media (max-width: 1430px) {
@@ -426,8 +432,8 @@ form .send-btn:hover {
     right: 0;
     display: flex;
     flex-direction: column;
-    background: #2c3e50;
-    box-shadow: 0px 15px 30px 0px rgb(0 0 0 / 70%);
+    background: #ffffff; /* Background navbar saat mobile juga terang */
+    box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.1); /* Bayangan lebih soft */
     text-align: left;
     transition: 0.2s ease;
   }
@@ -437,6 +443,7 @@ form .send-btn:hover {
     border-left: 2px solid var(--main-color);
     margin: 1rem;
     display: block;
+    color: var(--text-color); /* Warna teks di navbar mobile */
   }
   .navbar.active {
     top: 100%;
